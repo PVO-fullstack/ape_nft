@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "About",
+        "link": ""
+    },
+    {
+        "id": 2,
+        "name": "M-map",
+        "link": ""
+    },
+    {
+        "id": 3,
+        "name": "Faq",
+        "link": ""
+    },
+    {
+        "id": 4,
+        "name": "Arts",
+        "link": ""
+    },
+    {
+        "id": 5,
+        "name": "Mint",
+        "link": ""
+    }
+]

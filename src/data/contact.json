@@ -1,0 +1,27 @@
+{
+    "title": "Are you in?",
+    "text": "Join the YACHT APE community to be one of the first to receive our limited edition NFT",
+    "input": [
+        {
+            "id": 1,
+            "name": "discord",
+            "type": "discord",
+            "errorMessages": "Wrong discord",
+            "svg": "/discord.svg",
+            "placeholder": "@username"
+        },
+        {
+            "id": 2,
+            "name": "address",
+            "type": "address",
+            "errorMessages": "Wrong address",
+            "svg": "/wallet.svg",
+            "placeholder": "Wallet address"
+        }
+    ],
+    "btn": {
+        "default": "Mint",
+        "success": "Minteed",
+        "error": "Error"
+    }
+}
