@@ -13,8 +13,8 @@ export const ContactUs = () => {
   return (
     <Conteiner id="Mint">
       <Title title={title} />
-      <div className="flex flex-col gap-4">
-        <X className="block mx-auto" />
+      <div className="flex flex-col gap-4 md:gap-6 md:px-[85px]">
+        <X className="block mx-auto md:w-9 md:h-9" />
         <p className="text-center text-white text-base font-normal font-messina uppercase leading-[19px]">
           {text}
         </p>

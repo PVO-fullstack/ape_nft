@@ -6,7 +6,7 @@ export const biroScript = localFont({
 });
 
 export const messinaSans = localFont({
-  src: "../fonts/MessinaSans/MessinaSansMono-Regular.ttf",
+  src: "../fonts/MessinaSans/MessinaSansMono-Book.ttf",
   variable: "--font-messina",
 });
 

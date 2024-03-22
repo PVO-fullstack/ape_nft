@@ -61,7 +61,7 @@ export const Input = ({
           {...onChangeProps}
           autoComplete="off"
           placeholder={placeholder}
-          className={`w-[168px] h-12 px-6 py-[22px] rounded-tr-lg rounded-br-lg border justify-start items-center gap-2.5 inline-flex  text-xs font-normal font-messina uppercase leading-[19px] placeholder:text-opacity-25 focus:${
+          className={`w-[168px] md:w-[200px] h-12 px-6 py-[22px] rounded-tr-lg rounded-br-lg border justify-start items-center gap-2.5 inline-flex  text-xs font-normal font-messina uppercase leading-[14px] placeholder:text-opacity-25 focus:${
             errors[name] ? "border-rose-500" : "border-white"
           } ${
             errors[name]

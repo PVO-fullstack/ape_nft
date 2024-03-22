@@ -7,7 +7,7 @@ export const MapCard = ({ descr, title, img }) => {
     <div>
       {img ? (
         <Link
-          className="h-[242px] w-full px-3 py-6 bg-heroBg rounded-xl flex-col justify-between inline-flex"
+          className="h-[242px] w-full px-3 md:px-6 py-6 bg-heroBg rounded-xl flex-col justify-between inline-flex"
           href="http://www.ukr.net"
           target="blank"
           rel="nofollow noreferrer noopener"
@@ -24,8 +24,8 @@ export const MapCard = ({ descr, title, img }) => {
           </h3>
         </Link>
       ) : (
-        <div className="h-[242px] w-full px-3 py-6 bg-stone-900 rounded-xl flex-col justify-between inline-flex">
-          <p className="text-white text-xs font-normal font-messina uppercase leading-[14px]">
+        <div className="h-[242px] w-full px-3 md:px-6 py-6 bg-stone-900 rounded-xl flex-col justify-between inline-flex">
+          <p className="md:w-32 md:self-end text-white text-xs font-normal font-messina uppercase leading-[14px]">
             {descr}
           </p>
           {/* )} */}

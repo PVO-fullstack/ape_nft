@@ -1,6 +1,6 @@
 "use client";
 
-import { useWindowWidth } from "@/hooks/getWindowWidth";
+import { useWindowWidth } from "@/hooks/getWindowWidth.jsx";
 import React, { useEffect, useRef, useState } from "react";
 
 export const TabItem = ({ id, title, description, getCurrent, current }) => {
@@ -49,7 +49,7 @@ export const TabItem = ({ id, title, description, getCurrent, current }) => {
       </div>
       <div className="flex flex-col">
         <h3
-          className={` text-xl font-black font-grotesk transition-[color] duration-500 uppercase leading-tight ${
+          className={` text-xl font-black font-grotesk transition-[color] duration-500 uppercase leading-tight md:text-[32px] md:leading-loose ${
             isOpen ? "text-rose-500" : "text-white"
           }`}
         >
