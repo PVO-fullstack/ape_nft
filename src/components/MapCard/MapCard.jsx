@@ -1,11 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export const MapCard = ({ descr, title, img }) => {
   return (
     <div>
-      <div className="h-[242px] px-3 py-6 bg-stone-900 rounded-xl flex-col justify-between inline-flex">
-        {img ? (
+      {img ? (
+        <Link
+          className="h-[242px] w-full px-3 py-6 bg-heroBg rounded-xl flex-col justify-between inline-flex"
+          href="http://www.ukr.net"
+          target="blank"
+          rel="nofollow noreferrer noopener"
+        >
           <Image
             className="block ml-auto"
             src={img}
@@ -13,15 +19,21 @@ export const MapCard = ({ descr, title, img }) => {
             width={24}
             height={24}
           />
-        ) : (
+          <h3 className="text-white text-[32px] font-black font-grotesk uppercase leading-none">
+            {title}
+          </h3>
+        </Link>
+      ) : (
+        <div className="h-[242px] w-full px-3 py-6 bg-stone-900 rounded-xl flex-col justify-between inline-flex">
           <p className="text-white text-xs font-normal font-messina uppercase leading-[14px]">
             {descr}
           </p>
-        )}
-        <h3 className="text-white text-[32px] font-black font-grotesk uppercase leading-none">
-          {title}
-        </h3>
-      </div>
+          {/* )} */}
+          <h3 className="text-white text-[32px] font-black font-grotesk uppercase leading-none">
+            {title}
+          </h3>
+        </div>
+      )}
     </div>
   );
 };

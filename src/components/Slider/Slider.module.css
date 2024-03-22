@@ -28,7 +28,7 @@
   transition: all 0.5s;
 }
 
-.slick-arrow.slick-next:focus::before,
+/* .slick-arrow.slick-next:focus::before,
 .slick-arrow.slick-next:hover::before,
 .slick-arrow.slick-prev:focus::before,
 .slick-arrow.slick-prev:hover::before {
@@ -40,7 +40,7 @@
 .slick-arrow.slick-prev.slick-disabled:focus::before,
 .slick-arrow.slick-prev.slick-disabled:hover::before {
   transform: scale(1);
-}
+} */
 
 .slick-slider {
   padding: 0 0 44px 0;

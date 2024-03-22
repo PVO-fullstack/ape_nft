@@ -6,7 +6,7 @@ import React from "react";
 export const Logo = ({ className }) => {
   return (
     <Link
-      className={` ${className} inline-block transition-all duration-300 hover:text-heroBg`}
+      className={` ${className} z-10 inline-block transition-all duration-300 hover:text-heroBg`}
       href="/"
     >
       <svg

@@ -3,9 +3,8 @@
 import { useWindowWidth } from "@/hooks/getWindowWidth";
 import React, { useEffect, useRef, useState } from "react";
 
-export const TabItem = ({ id, title, description }) => {
+export const TabItem = ({ id, title, description, getCurrent, current }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [waitClick, setWaitClick] = useState(false);
   const [descriptionHeight, setDescriptionHeight] = useState(3000);
   const windowWidth = useWindowWidth();
 
@@ -13,43 +12,27 @@ export const TabItem = ({ id, title, description }) => {
   const refDescription = useRef(null);
 
   useEffect(() => {
-    if (id === 1) {
-      // setIsOpen(true);
-      ref.current.focus();
-    }
     if (windowWidth) {
       setDescriptionHeight(refDescription.current?.clientHeight);
     }
-  }, [windowWidth]);
-
-  const handleFocus = () => {
-    setIsOpen(true);
-    setWaitClick(true);
-  };
-
-  const handleBlur = () => {
-    setIsOpen(false);
-    setWaitClick(false);
-  };
-
-  const handleClick = () => {
-    if (refDescription.current.id === 1) setIsOpen(false);
-    if (isOpen) {
-      if (waitClick) {
-        setWaitClick(false);
-      } else {
-        ref.current.blur();
-      }
+    if (current === ref.current.id) {
+      setIsOpen(true);
     }
+    if (current !== ref.current.id) {
+      setIsOpen(false);
+    }
+  }, [windowWidth, current]);
+
+  const handleClick = (e) => {
+    getCurrent(e.currentTarget.getAttribute("data-el"));
   };
 
   return (
     <li
       ref={ref}
       id={id}
+      data-el={id}
       tabIndex={0}
-      onFocus={handleFocus}
-      onBlur={handleBlur}
       onClick={handleClick}
       className={`group h-full cursor-pointer rounded-xl px-2 pt-2 pb-[10px] flex gap-2 ${
         isOpen ? "bg-stone-900 outline-none" : ""

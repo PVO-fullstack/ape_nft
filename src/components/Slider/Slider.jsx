@@ -50,7 +50,7 @@ export const Slider = ({
     centerMode: centralMode,
     speed: 500,
     infinite: infinite,
-    centerPadding: "0px",
+    centerPadding: "1px",
     slidesToScroll: 1,
     initialSlide: 0,
     nextArrow: <SampleNextArrow />,
