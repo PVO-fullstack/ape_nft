@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${biroScript.variable} ${messinaSans.variable} ${rightGrotesk.variable} w-full pt-[54px] relative bg-background`}
+        className={` ${biroScript.variable} ${messinaSans.variable} ${rightGrotesk.variable} w-full pt-[54px] xl:pt-4 relative bg-background overflow-x-hidden`}
       >
         <Header />
         <main>{children}</main>

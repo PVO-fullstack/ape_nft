@@ -13,9 +13,9 @@ export const ContactUs = () => {
   return (
     <Conteiner id="Mint">
       <Title title={title} />
-      <div className="flex flex-col gap-4 md:gap-6 md:px-[85px]">
+      <div className="flex flex-col gap-4 md:gap-6 md:w-[397px] xl:w-[581px] mx-auto">
         <X className="block mx-auto md:w-9 md:h-9" />
-        <p className="text-center text-white text-base font-normal font-messina uppercase leading-[19px]">
+        <p className=" xl:text-2xl text-center text-white text-base font-normal font-messina uppercase leading-[19px]">
           {text}
         </p>
         <ContactForm data={input} btn={btn} />

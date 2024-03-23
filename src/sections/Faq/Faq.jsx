@@ -16,7 +16,7 @@ export const Faq = () => {
   return (
     <Conteiner id="Faq">
       <Title title="faq" />
-      <ul>
+      <ul className=" mb-4 last:mb-0">
         {faqData.map((item) => (
           <TabItem
             getCurrent={getCurrent}
@@ -25,6 +25,7 @@ export const Faq = () => {
             id={item.id}
             title={item.title}
             description={item.description}
+            img={item.img}
           />
         ))}
       </ul>

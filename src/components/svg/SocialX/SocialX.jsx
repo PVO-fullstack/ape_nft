@@ -14,7 +14,7 @@ export const SocialX = ({ isBurger }) => {
       rel="nofollow noreferrer noopener"
     >
       <svg
-        className="w-4 h-4"
+        className="w-4 md:w-6 md:h-6 h-4"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"

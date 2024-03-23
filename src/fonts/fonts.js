@@ -1,12 +1,12 @@
 import localFont from "next/font/local";
 
 export const biroScript = localFont({
-  src: "../fonts/BiroScript/BiroScriptPlus.ttf",
+  src: "../fonts/BiroScript/BiroScriptPlus-Bold.ttf",
   variable: "--font-biro",
 });
 
 export const messinaSans = localFont({
-  src: "../fonts/MessinaSans/MessinaSansMono-Book.ttf",
+  src: "../fonts/MessinaSans/MessinaSansMono-SemiBold.ttf",
   variable: "--font-messina",
 });
 

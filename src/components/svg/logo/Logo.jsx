@@ -3,13 +3,14 @@
 import Link from "next/link";
 import React from "react";
 
-export const Logo = ({ className }) => {
+export const Logo = ({ className, svgClass }) => {
   return (
     <Link
       className={` ${className} z-10 inline-block transition-all duration-300 hover:text-heroBg`}
       href="/"
     >
       <svg
+        className={svgClass}
         xmlns="http://www.w3.org/2000/svg"
         width="48"
         height="32"

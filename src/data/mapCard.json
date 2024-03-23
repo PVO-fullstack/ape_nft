@@ -14,6 +14,10 @@
     {
         "descr": "",
         "arrow": "/Vector.svg",
-        "title": "Learn more in mind map"
+        "title": {
+            "first": "Learn",
+            "second": "more",
+            "third": "in mind map"
+        }
     }
 ]

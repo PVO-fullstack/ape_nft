@@ -11,20 +11,20 @@ export const ContactForm = ({ data, btn }) => {
     handleSubmit,
     reset,
     setValue,
-    formState: { errors, isValid },
+    formState: { errors, isValid, isSubmitted },
   } = useForm();
 
   const onSubmit = async (data) => {
     reset();
     setTimeout(() => {
       toast.success(`Welcome ${data.discord}`);
-    }, 1000);
+    }, 5000);
   };
 
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col md:items-center "
+      className="mx-auto flex flex-col md:items-center "
     >
       {data.map((item) => (
         <Input
@@ -41,10 +41,10 @@ export const ContactForm = ({ data, btn }) => {
       ))}
       <button
         disabled={!isValid}
-        className=" disabled:bg-slate-500 w-[216px] md:w-[247px] h-[41px] px-[107px] pt-2.5 pb-3 text-white text-base uppercase font-black leading-[19px] font-grotesk transition-colors bg-rose-500 rounded-lg backdrop-blur-md justify-center items-center gap-2.5 inline-flex hover:text-black"
+        className={` hover:text-primaryColor w-[216px] md:w-[247px] xl:w-[397px] h-[41px] xl:h-[70px] px-[107px] pt-2.5 pb-3 text-white text-base xl:text-[28px] uppercase font-black leading-[19px] xl:leading-[34px] font-grotesk transition-colors bg-heroBg rounded-lg backdrop-blur-md justify-center items-center gap-2.5 inline-flex`}
         type="submit"
       >
-        {btn.default}
+        {(isSubmitted && btn.success) || btn.default}
       </button>
     </form>
   );

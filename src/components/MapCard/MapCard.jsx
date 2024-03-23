@@ -7,29 +7,30 @@ export const MapCard = ({ descr, title, img }) => {
     <div>
       {img ? (
         <Link
-          className="h-[242px] w-full px-3 md:px-6 py-6 bg-heroBg rounded-xl flex-col justify-between inline-flex"
+          className="xl:h-[480px] h-[242px] w-full px-3 md:px-6 py-6 bg-heroBg rounded-xl flex-col justify-between inline-flex"
           href="http://www.ukr.net"
           target="blank"
           rel="nofollow noreferrer noopener"
         >
           <Image
-            className="block ml-auto"
+            className="block ml-auto xl:w-[39.54px] xl:h-[39.54px]]"
             src={img}
             alt="arrow"
             width={24}
             height={24}
           />
-          <h3 className="text-white text-[32px] font-black font-grotesk uppercase leading-none">
-            {title}
+          <h3 className="text-white text-[32px] xl:text-[64px] font-black font-grotesk uppercase xl:leading-[64px] leading-none">
+            <span className="block">{title.first}</span>{" "}
+            <span className="block">{title.second}</span> {title.third}
           </h3>
         </Link>
       ) : (
-        <div className="h-[242px] w-full px-3 md:px-6 py-6 bg-stone-900 rounded-xl flex-col justify-between inline-flex">
-          <p className="md:w-32 md:self-end text-white text-xs font-normal font-messina uppercase leading-[14px]">
+        <div className="xl:h-[480px] h-[242px] w-full px-3 md:px-6 py-6 bg-primaryColor rounded-xl flex-col justify-between inline-flex">
+          <p className="xl:w-[228px] md:w-32 md:self-end text-white text-xs xl:text-2xl font-normal font-messina uppercase leading-[14px] xl:leading-[29px]">
             {descr}
           </p>
           {/* )} */}
-          <h3 className="text-white text-[32px] font-black font-grotesk uppercase leading-none">
+          <h3 className="text-white text-[32px] xl:text-[64px] font-black font-grotesk uppercase xl:leading-[64px] leading-none">
             {title}
           </h3>
         </div>

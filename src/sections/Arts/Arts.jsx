@@ -7,7 +7,7 @@ import { ArtCard } from "@/components/ArtCard/ArtCard";
 
 export const Arts = () => {
   return (
-    <Conteiner id="Arts">
+    <Conteiner className="pb-[78px]" id="Arts">
       <Title title="Collection" />
       <Slider>
         {arts.map((art) => (

@@ -1,15 +1,16 @@
 .slick-arrow.slick-prev {
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translate(-52px, -24px);
+  /* left: 50%; */
+  transform: translate(120%, -24px);
 }
 
 .slick-arrow.slick-next {
   top: 100%;
-  right: 50%;
-  transform: translate(52px, -24px);
+  /* right: 50%; */
+  transform: translate(-100%, -24px);
 }
+
 .slick-arrow.slick-prev::before {
   content: "Prev";
   color: #fff;
@@ -28,20 +29,6 @@
   transition: all 0.5s;
 }
 
-/* .slick-arrow.slick-next:focus::before,
-.slick-arrow.slick-next:hover::before,
-.slick-arrow.slick-prev:focus::before,
-.slick-arrow.slick-prev:hover::before {
-  transform: scale(1.2);
-}
-
-.slick-arrow.slick-next.slick-disabled:focus::before,
-.slick-arrow.slick-next.slick-disabled:hover::before,
-.slick-arrow.slick-prev.slick-disabled:focus::before,
-.slick-arrow.slick-prev.slick-disabled:hover::before {
-  transform: scale(1);
-} */
-
 .slick-slider {
   padding: 0 0 44px 0;
   position: relative;
@@ -50,6 +37,19 @@
 @media screen and (min-width: 768px) {
   .slick-slider {
     padding: 24px 0 48px 0;
+  }
+
+  .slick-arrow.slick-prev {
+    position: absolute;
+    top: 100%;
+    left: 39%;
+    transform: translate(0, -24px);
+  }
+
+  .slick-arrow.slick-next {
+    top: 100%;
+    right: 39%;
+    transform: translate(0, -24px);
   }
 }
 
@@ -72,14 +72,14 @@
   }
 
   .slick-arrow.slick-next {
-    top: 50%;
-    right: 0;
-    transform: translate(0);
+    top: 100%;
+    right: 43%;
+    transform: translate(0, 24px);
   }
   .slick-arrow.slick-prev {
-    top: 50%;
-    left: 0;
-    transform: translate(0);
+    top: 100%;
+    left: 43%;
+    transform: translate(0, 24px);
   }
 }
 

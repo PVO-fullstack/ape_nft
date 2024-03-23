@@ -46,7 +46,7 @@ export const Input = ({
   return (
     <label className="flex flex-col">
       <div className="flex">
-        <span className="w-12 h-12 p-2.5 bg-stone-900 rounded-tl-lg rounded-bl-lg backdrop-blur-md justify-center items-center gap-2.5 inline-flex">
+        <span className="xl:w-16 xl:h-16 w-12 h-12 p-2.5 bg-primaryColor rounded-tl-lg rounded-bl-lg backdrop-blur-md justify-center items-center gap-2.5 inline-flex">
           <Image src={svg} alt="image" width={100} height={100} />
         </span>
         <input
@@ -61,16 +61,16 @@ export const Input = ({
           {...onChangeProps}
           autoComplete="off"
           placeholder={placeholder}
-          className={`w-[168px] md:w-[200px] h-12 px-6 py-[22px] rounded-tr-lg rounded-br-lg border justify-start items-center gap-2.5 inline-flex  text-xs font-normal font-messina uppercase leading-[14px] placeholder:text-opacity-25 focus:${
-            errors[name] ? "border-rose-500" : "border-white"
+          className={`w-[168px] md:w-[200px] xl:w-[333px] xl:h-16 h-12 px-6 py-[22px] rounded-tr-lg rounded-br-lg border justify-start items-center gap-2.5 inline-flex  text-xs xl:text-base xl:leading-[19px] font-normal font-messina uppercase leading-[14px] placeholder:text-opacity-25 focus:${
+            errors[name] ? " border-heroBg" : "border-white"
           } ${
             errors[name]
-              ? " text-rose-500 border-rose-500"
-              : "border-stone-900 text-white"
+              ? " text-heroBg border-heroBg"
+              : "border-primaryColor text-white"
           }`}
         />
       </div>
-      <span className=" h-4 inline-block w-full text-right text-rose-500 text-[10px] font-messina uppercase leading-3">
+      <span className=" h-4 inline-block w-full text-right text-heroBg text-[10px] xl:text-xs font-messina uppercase leading-3 xl:leading-[14px] ">
         {errors[name]?.message}
       </span>
     </label>
