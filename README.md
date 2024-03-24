@@ -16,4 +16,4 @@ It is landing page
 
 ---
 
-![Customers page](https://github.com/PVO-fullstack/ape_nft/blob/main/public/ContactS.png)
+![Customers page](https://github.com/PVO-fullstack/ape_nft/blob/main/public/Contact.png)
