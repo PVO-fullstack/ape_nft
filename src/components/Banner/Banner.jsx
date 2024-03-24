@@ -11,7 +11,7 @@ export const Banner = () => {
           <X className="md:w-9 md:h-9 block " /> Break rules
         </p>
       </div>
-      <div className=" hidden w-full absolute top-0  animate-marquee2 pt-1.5 pb-2 whitespace-nowrap text-white text-4xl font-black font-grotesk uppercase leading-9">
+      <div className=" hidden xl:inline-block w-full absolute top-0  animate-marquee2 pt-1.5 pb-2 whitespace-nowrap text-white text-4xl font-black font-grotesk uppercase leading-9">
         <p className="flex w-max">
           <X className="md:w-9 md:h-9 block " /> Destroy stereotypes
           <X className="md:w-9 md:h-9 block " /> HAVE NO LIMITS{" "}

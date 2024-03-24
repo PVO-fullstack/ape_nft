@@ -41,6 +41,4 @@ export const MapCard = ({ descr, title, img }) => {
 
 MapCard.propTypes = {
   descr: PropTypes.string,
-  title: PropTypes.string || PropTypes.objectOf(string),
-  img: PropTypes.bool,
 };

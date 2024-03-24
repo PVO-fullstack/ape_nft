@@ -79,5 +79,5 @@ Input.propTypes = {
   type: PropTypes.string,
   setValue: PropTypes.func,
   register: PropTypes.func,
-  errors: PropTypes.array,
+  errors: PropTypes.object,
 };
