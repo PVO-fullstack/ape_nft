@@ -3,6 +3,7 @@
 import { useWindowWidth } from "@/hooks/getWindowWidth.jsx";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
+import PropTypes from "prop-types";
 
 export const TabItem = ({
   id,
@@ -89,4 +90,13 @@ export const TabItem = ({
       </div>
     </li>
   );
+};
+
+TabItem.propTypes = {
+  id: PropTypes.number,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  img: PropTypes.string,
+  getCurrent: PropTypes.func,
+  current: PropTypes.string,
 };

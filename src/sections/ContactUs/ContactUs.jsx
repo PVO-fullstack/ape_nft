@@ -1,5 +1,4 @@
-import { Conteiner } from "@/components/Conteiner/Conteiner";
-import { Input } from "@/components/Input/Input";
+import { Container } from "@/components/Container/Container";
 import { Title } from "@/components/Title/Title";
 import { X } from "@/components/svg/X/X";
 import React from "react";
@@ -11,7 +10,7 @@ export const ContactUs = () => {
   const { title, text, input, btn } = contactData;
 
   return (
-    <Conteiner id="Mint">
+    <Container id="Mint">
       <Title title={title} />
       <div className="flex flex-col gap-4 md:gap-6 md:w-[397px] xl:w-[581px] mx-auto">
         <X className="block mx-auto md:w-9 md:h-9" />
@@ -25,6 +24,6 @@ export const ContactUs = () => {
         pauseOnFocusLoss={false}
         pauseOnHover={false}
       />
-    </Conteiner>
+    </Container>
   );
 };

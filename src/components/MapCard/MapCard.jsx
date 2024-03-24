@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import PropTypes, { string } from "prop-types";
 
 export const MapCard = ({ descr, title, img }) => {
   return (
@@ -29,7 +30,6 @@ export const MapCard = ({ descr, title, img }) => {
           <p className="xl:w-[228px] md:w-32 md:self-end text-white text-xs xl:text-2xl font-normal font-messina uppercase leading-[14px] xl:leading-[29px]">
             {descr}
           </p>
-          {/* )} */}
           <h3 className="text-white text-[32px] xl:text-[64px] font-black font-grotesk uppercase xl:leading-[64px] leading-none">
             {title}
           </h3>
@@ -37,4 +37,10 @@ export const MapCard = ({ descr, title, img }) => {
       )}
     </div>
   );
+};
+
+MapCard.propTypes = {
+  descr: PropTypes.string,
+  title: PropTypes.string || PropTypes.objectOf(string),
+  img: PropTypes.bool,
 };

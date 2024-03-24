@@ -3,6 +3,7 @@
 import React from "react";
 import { MenuBtn } from "../MenuBtn/MenuBtn";
 import { Navigation } from "../Navigation/Navigation";
+import PropTypes from "prop-types";
 
 export const Menu = ({ click, isBurger, isOpen }) => {
   return (
@@ -22,4 +23,10 @@ export const Menu = ({ click, isBurger, isOpen }) => {
       </ul>
     </nav>
   );
+};
+
+Menu.propTypes = {
+  click: PropTypes.func,
+  isBurger: PropTypes.bool,
+  isOpen: PropTypes.bool,
 };

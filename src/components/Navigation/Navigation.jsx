@@ -1,6 +1,7 @@
 import React from "react";
 import nav from "../../data/nav.json";
 import { Link } from "react-scroll";
+import PropTypes from "prop-types";
 
 export const Navigation = ({ click, className }) => {
   return (
@@ -23,4 +24,9 @@ export const Navigation = ({ click, className }) => {
       ))}
     </>
   );
+};
+
+Navigation.propTypes = {
+  click: PropTypes.func,
+  className: PropTypes.string,
 };

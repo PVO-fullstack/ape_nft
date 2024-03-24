@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import PropTypes from "prop-types";
 
 export const ArtCard = ({ img }) => {
   return (
@@ -13,4 +14,8 @@ export const ArtCard = ({ img }) => {
       />
     </div>
   );
+};
+
+ArtCard.propTypes = {
+  img: PropTypes.string,
 };

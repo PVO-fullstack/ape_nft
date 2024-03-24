@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export const X = ({ className }) => {
   return (
@@ -24,4 +25,8 @@ export const X = ({ className }) => {
       />
     </svg>
   );
+};
+
+X.propTypes = {
+  className: PropTypes.string,
 };

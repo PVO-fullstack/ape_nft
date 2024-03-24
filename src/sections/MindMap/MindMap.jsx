@@ -1,6 +1,6 @@
 "use client";
 
-import { Conteiner } from "@/components/Conteiner/Conteiner";
+import { Container } from "@/components/Container/Container";
 import { MapCard } from "@/components/MapCard/MapCard";
 import { Slider } from "@/components/Slider/Slider";
 import { Title } from "@/components/Title/Title";
@@ -18,7 +18,7 @@ export const MindMap = () => {
   }, [windowWidth]);
 
   return (
-    <Conteiner id="M-map" className="pt-[50px]">
+    <Container id="M-map" className="pt-[50px]">
       <Title title="mind map" />
       {width < 767 ? (
         <Slider className="mt-6">
@@ -43,6 +43,6 @@ export const MindMap = () => {
           ))}
         </div>
       )}
-    </Conteiner>
+    </Container>
   );
 };

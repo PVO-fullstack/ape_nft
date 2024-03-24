@@ -2,6 +2,7 @@ import { Header } from "@/components/Header/Header";
 import "./globals.css";
 import { Footer } from "@/components/Footer/Footer";
 import { biroScript, messinaSans, rightGrotesk } from "@/fonts/fonts";
+import PropTypes from "prop-types";
 
 export default function RootLayout({ children }) {
   return (
@@ -16,3 +17,7 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+RootLayout.propTypes = {
+  children: PropTypes.node,
+};

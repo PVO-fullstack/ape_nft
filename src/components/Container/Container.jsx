@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Conteiner = ({ children, className, id }) => {
+export const Container = ({ children, className, id }) => {
   return (
     <section
       id={id}

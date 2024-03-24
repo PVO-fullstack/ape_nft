@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import PropTypes from "prop-types";
 
 export const Input = ({
   svg,
@@ -9,33 +10,27 @@ export const Input = ({
   setValue,
   register,
   errors,
-  errorMessages,
 }) => {
   const discordRegisterValidation = {
-    required: errorMessages.required || "Required",
+    required: "Required",
     minLength: {
       value: 5,
-      message: errorMessages.minLength || "Min 5 symbol",
+      message: "Min 5 symbol",
     },
     pattern: {
       value: /^@+(([A-Za-z]))* ?$/,
-      message: errorMessages.pattern || "Wrong discord",
+      message: "Wrong discord",
     },
   };
 
   const addressRegisterValidation = {
-    required: errorMessages.required || "Required",
-    pattern: {
-      value:
-        /^(([A-Za-zА-Яа-яЇїІіЄєҐґ])+(['`][A-Za-zА-Яа-яЇїІіЄєҐґ]+)*)+([- ](([A-Za-zА-Яа-яЇїІіЄєҐґ])+(['`][A-Za-zА-Яа-яЇїІіЄєҐґ]+)*))* ?$/,
-      message: errorMessages.pattern || "Wrong address",
-    },
+    required: "Required",
   };
 
   const getHandleChange = () => {
     const fn = (event) => {
       const { value } = event.target;
-      setValue(name, event.target.value, { shouldValidate: true });
+      setValue(name, value, { shouldValidate: true });
     };
     return fn;
   };
@@ -75,4 +70,14 @@ export const Input = ({
       </span>
     </label>
   );
+};
+
+Input.propTypes = {
+  svg: PropTypes.string,
+  placeholder: PropTypes.string,
+  name: PropTypes.string,
+  type: PropTypes.string,
+  setValue: PropTypes.func,
+  register: PropTypes.func,
+  errors: PropTypes.array,
 };

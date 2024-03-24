@@ -1,12 +1,12 @@
-import { Baner } from "@/components/Baner/Baner";
-import { Conteiner } from "@/components/Conteiner/Conteiner";
+import { Banner } from "@/components/Banner/Banner";
+import { Container } from "@/components/Container/Container";
 import { X } from "@/components/svg/X/X";
 import Image from "next/image";
 import React from "react";
 
 export const About = () => {
   return (
-    <Conteiner id="About">
+    <Container id="About">
       <div className="md:grid md:flow-dance md:gap-x-[10px] xl:gap-[2px]">
         <h2 className=" xl:w-[538px] md:w-[269px] w-full md:row-start-1 md:row-end-3 md:text-6xl xl:text-[120px] md:leading-[60px] xl:leading-[120px] text-white text-[40px] font-black font-grotesk uppercase leading-10">
           a Story that started with{" "}
@@ -37,7 +37,7 @@ export const About = () => {
           height={662}
         />
       </div>
-      <Baner />
-    </Conteiner>
+      <Banner />
+    </Container>
   );
 };

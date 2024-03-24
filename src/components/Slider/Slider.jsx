@@ -74,8 +74,5 @@ export const Slider = ({ children }) => {
 };
 
 Slider.propTypes = {
-  centralMode: PropTypes.bool,
-  className: PropTypes.string,
-  infinite: PropTypes.bool,
   children: PropTypes.node,
 };

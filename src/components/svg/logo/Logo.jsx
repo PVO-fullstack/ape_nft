@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
+import PropTypes from "prop-types";
 
 export const Logo = ({ className, svgClass }) => {
   return (
@@ -61,4 +62,9 @@ export const Logo = ({ className, svgClass }) => {
       </svg>
     </Link>
   );
+};
+
+Logo.propTypes = {
+  className: PropTypes.string,
+  svgClass: PropTypes.string,
 };

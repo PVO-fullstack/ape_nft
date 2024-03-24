@@ -1,5 +1,4 @@
 import React from "react";
-import { Social } from "../Social/Social";
 
 export const Footer = () => {
   return (

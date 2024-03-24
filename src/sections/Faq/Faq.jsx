@@ -1,6 +1,6 @@
 "use client";
 
-import { Conteiner } from "@/components/Conteiner/Conteiner";
+import { Container } from "@/components/Container/Container";
 import { TabItem } from "@/components/TabItem/TabItem";
 import { Title } from "@/components/Title/Title";
 import React, { useState } from "react";
@@ -14,7 +14,7 @@ export const Faq = () => {
   };
 
   return (
-    <Conteiner id="Faq">
+    <Container id="Faq">
       <Title title="faq" />
       <ul className=" mb-4 last:mb-0">
         {faqData.map((item) => (
@@ -29,6 +29,6 @@ export const Faq = () => {
           />
         ))}
       </ul>
-    </Conteiner>
+    </Container>
   );
 };

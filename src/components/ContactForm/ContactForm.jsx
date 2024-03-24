@@ -4,6 +4,7 @@ import React from "react";
 import { Input } from "../Input/Input";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
+import PropTypes, { string } from "prop-types";
 
 export const ContactForm = ({ data, btn }) => {
   const {
@@ -48,4 +49,9 @@ export const ContactForm = ({ data, btn }) => {
       </button>
     </form>
   );
+};
+
+ContactForm.propTypes = {
+  data: PropTypes.arrayOf(Object),
+  btn: PropTypes.objectOf(string),
 };

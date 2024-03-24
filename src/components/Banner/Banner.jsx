@@ -1,7 +1,7 @@
 import React from "react";
 import { X } from "../svg/X/X";
 
-export const Baner = () => {
+export const Banner = () => {
   return (
     <div className=" w-screen absolute left-[-72px] md:left-[-88px] xl:left-[-204px] bottom-[-50px] overflow-x-hidden bg-heroBg ">
       <div className="w-full  animate-marquee pt-1.5 pb-2 whitespace-nowrap text-white text-4xl font-black font-grotesk uppercase leading-9">

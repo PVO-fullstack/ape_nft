@@ -3,6 +3,7 @@ import { Discord } from "../svg/Discord/Discord";
 import { SocialX } from "../svg/SocialX/SocialX";
 import { SocialNet } from "../svg/SocialNet/SocialNet";
 import { MenuBtn } from "../MenuBtn/MenuBtn";
+import PropTypes from "prop-types";
 
 export const Social = ({ className, isBurger }) => {
   return (
@@ -18,4 +19,9 @@ export const Social = ({ className, isBurger }) => {
       </MenuBtn>
     </ul>
   );
+};
+
+Social.propTypes = {
+  className: PropTypes.string,
+  isBurger: PropTypes.bool,
 };

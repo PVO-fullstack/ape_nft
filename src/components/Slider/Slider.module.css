@@ -1,13 +1,11 @@
 .slick-arrow.slick-prev {
   position: absolute;
   top: 100%;
-  /* left: 50%; */
   transform: translate(120%, -24px);
 }
 
 .slick-arrow.slick-next {
   top: 100%;
-  /* right: 50%; */
   transform: translate(-100%, -24px);
 }
 

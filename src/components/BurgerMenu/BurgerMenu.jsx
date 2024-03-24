@@ -2,10 +2,9 @@ import React from "react";
 import { Logo } from "../svg/logo/Logo";
 import { Menu } from "../Menu/Menu";
 import { Social } from "../Social/Social";
-import nav from "../../data/nav.json";
-import { Link } from "react-scroll";
 import { Footer } from "../Footer/Footer";
 import { Navigation } from "../Navigation/Navigation";
+import PropTypes from "prop-types";
 
 export const BurgerMenu = ({ isOpen, click }) => {
   return (
@@ -31,4 +30,9 @@ export const BurgerMenu = ({ isOpen, click }) => {
       <Footer />
     </div>
   );
+};
+
+BurgerMenu.propTypes = {
+  isOpen: PropTypes.bool,
+  click: PropTypes.func,
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export const MenuBtn = ({ name, children, className, onClick, isBurger }) => {
   return (
@@ -14,4 +15,12 @@ export const MenuBtn = ({ name, children, className, onClick, isBurger }) => {
       {children}
     </li>
   );
+};
+
+MenuBtn.propTypes = {
+  name: PropTypes.string,
+  className: PropTypes.string,
+  onClick: PropTypes.func,
+  isBurger: PropTypes.bool,
+  children: PropTypes.node,
 };
