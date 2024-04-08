@@ -18,7 +18,9 @@ export const Menu = ({ click, isBurger, isOpen }) => {
           isBurger={isBurger}
           onClick={click}
           name={isOpen ? "Close" : "Menu"}
-          className={`  ${isOpen ? " rounded-e-lg " : "rounded-lg"} `}
+          className={`  ${
+            isOpen ? " rounded-lg md:rounded-s-none " : "rounded-lg"
+          } `}
         />
       </ul>
     </nav>

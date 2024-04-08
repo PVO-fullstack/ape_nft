@@ -42,7 +42,7 @@ export const ContactForm = ({ data, btn }) => {
       ))}
       <button
         disabled={!isValid}
-        className={` hover:text-primaryColor w-[216px] md:w-[247px] xl:w-[397px] h-[41px] xl:h-[70px] px-[107px] pt-2.5 pb-3 text-white text-base xl:text-[28px] uppercase font-black leading-[19px] xl:leading-[34px] font-grotesk transition-colors bg-heroBg rounded-lg backdrop-blur-md justify-center items-center gap-2.5 inline-flex`}
+        className={` hover:text-primaryColor focus:text-primaryColor transition-[color] duration-500 w-[216px] md:w-[247px] xl:w-[397px] h-[41px] xl:h-[70px] px-[107px] pt-2.5 pb-3 text-white text-base xl:text-[28px] uppercase font-black leading-[19px] xl:leading-[34px] font-grotesk bg-heroBg rounded-lg backdrop-blur-md justify-center items-center gap-2.5 inline-flex`}
         type="submit"
       >
         {(isSubmitted && btn.success) || btn.default}

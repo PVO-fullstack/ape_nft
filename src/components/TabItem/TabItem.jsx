@@ -12,6 +12,7 @@ export const TabItem = ({
   img,
   getCurrent,
   current,
+  alt,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [descriptionHeight, setDescriptionHeight] = useState(3000);
@@ -53,7 +54,7 @@ export const TabItem = ({
         <Image
           className="w-[148px] xl:w-[248px] h-[183px] xl:h-[282px] origin-top-left rotate-[-16deg] rounded-2xl absolute left-0"
           src={img}
-          alt="ape"
+          alt={alt}
           width={248}
           height={282}
         />
@@ -69,7 +70,7 @@ export const TabItem = ({
       </div>
       <div className="flex flex-col">
         <h3
-          className={` hover:text-heroBg text-xl font-black font-grotesk transition-[color] duration-500 uppercase leading-tight md:text-[32px] xl:text-[64px] md:leading-8 xl:leading-[64px] ${
+          className={` hover:text-heroBg focus:text-heroBg text-xl font-black font-grotesk transition-[color] duration-500 uppercase leading-tight md:text-[32px] xl:text-[64px] md:leading-8 xl:leading-[64px] ${
             isOpen ? "text-heroBg" : "text-white"
           }`}
         >
@@ -99,4 +100,5 @@ TabItem.propTypes = {
   img: PropTypes.string,
   getCurrent: PropTypes.func,
   current: PropTypes.string,
+  alt: PropTypes.string,
 };

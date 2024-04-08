@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 export const SocialX = ({ isBurger }) => {
   return (
     <Link
+      aria-label="SocialX link"
       className={`${
         isBurger
           ? "text-white hover:text-heroBg "

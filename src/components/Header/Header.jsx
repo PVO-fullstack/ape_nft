@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Logo } from "../svg/logo/Logo";
 import { Social } from "../Social/Social";
 import { Menu } from "../Menu/Menu";
@@ -8,6 +8,17 @@ import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
 
   const handleClick = () => {
     setIsOpen(!isOpen);

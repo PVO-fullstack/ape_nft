@@ -32,7 +32,7 @@ export const About = () => {
         <Image
           className=" xl:w-[492px] xl:h-[662px] xl:self-end mx-auto mt-10 md:row-start-2 md:row-end-5 md:col-start-2 md:w-[313px] md:h-[422px] md:mt-0 md:left-[-38px] "
           src="/about_mobil.png"
-          alt="some ape"
+          alt="Monkey in glasses and hat"
           width={492}
           height={662}
         />

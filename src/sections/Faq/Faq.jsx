@@ -26,6 +26,7 @@ export const Faq = () => {
             title={item.title}
             description={item.description}
             img={item.img}
+            alt={item.alt}
           />
         ))}
       </ul>

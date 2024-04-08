@@ -1,42 +1,52 @@
 [
     {
         "id": 1,
-        "img": "/ape1.png"
+        "img": "/ape1.png",
+        "alt": "Monkey in glasses, red coat and hat"
     },
     {
         "id": 2,
-        "img": "/ape2.png"
+        "img": "/ape2.png",
+        "alt": "Monkey in glasses and blue coat"
     },
     {
         "id": 3,
-        "img": "/ape3.png"
+        "img": "/ape3.png",
+        "alt": "Monkey in glasses and red coat"
     },
     {
         "id": 4,
-        "img": "/ape4.png"
+        "img": "/ape4.png",
+        "alt": "Monkey in glasses, gray coat and hat"
     },
     {
         "id": 5,
-        "img": "/ape5.png"
+        "img": "/ape5.png",
+        "alt": "Monkey in red t-shirt"
     },
     {
         "id": 6,
-        "img": "/ape6.png"
+        "img": "/ape6.png",
+        "alt": "Monkey in blue glasses and blue coat"
     },
     {
         "id": 7,
-        "img": "/ape7.png"
+        "img": "/ape7.png",
+        "alt": "Monkey in glasses, red coat and yellow hat"
     },
     {
         "id": 8,
-        "img": "/ape8.png"
+        "img": "/ape8.png",
+        "alt": "Monkey in glasses and gray suit"
     },
     {
         "id": 9,
-        "img": "/ape9.png"
+        "img": "/ape9.png",
+        "alt": "Monkey in glasses and gray sweater"
     },
     {
         "id": 10,
-        "img": "/ape10.png"
+        "img": "/ape10.png",
+        "alt": "Monkey in glasses and violet coat"
     }
 ]

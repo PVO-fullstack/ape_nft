@@ -11,7 +11,7 @@ export const Arts = () => {
       <Title title="Collection" />
       <Slider>
         {arts.map((art) => (
-          <ArtCard key={art.id} img={art.img} />
+          <ArtCard key={art.id} img={art.img} alt={art.alt} />
         ))}
       </Slider>
     </Container>
